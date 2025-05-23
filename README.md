@@ -1,8 +1,6 @@
-# Diapositives TP5 Thermodynamique
+## Diapositives TP5 Thermodynamique
 
-Diapositives pour le TP5 de Thermodynamqiue @ L3 Physique UGA.
-
-- Polycopie TP disponible dans
+Diapositives pour le TP5 de Thermodynamqiue @ L3 Physique UGA. Polycopie TP disponible dans https://github.com/LucasBerredo/TP_Thermo_EN
 
 #### Prérequis
 
