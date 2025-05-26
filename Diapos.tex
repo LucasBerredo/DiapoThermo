@@ -12,6 +12,7 @@
 \usepackage{physics}
 \usepackage{hyperref}
 \usepackage{adjustbox}
+\usepackage{listings}
 
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
 
@@ -20,6 +21,23 @@
 \date{}
 
 \usetheme[nofirafonts]{focus}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{darkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4
+}
 
 % Commands
 \newcommand{\newlines}{\newline\newline}
@@ -149,7 +167,7 @@
 
 
 \begin{frame}
-\frame{Approximation graphique 1er ordre}
+\frametitle{Approximation graphique 1er ordre}
 
 
 \end{frame}
@@ -158,7 +176,7 @@
 
 
 \begin{frame}
-\frame{Approximation graphique 2eme ordre}
+\frametitle{Approximation graphique 2eme ordre}
 
 
 \end{frame}
@@ -167,11 +185,34 @@
 
 
 \begin{frame}
-\frame{Approximation numérique avec Python}
-\begin{itemize}
-	\item{Nous cherchons}
-\end{itemize}
+\frametitle{Approximation numérique avec Python}
+Comme nous avons la résolution pour $\tau$, nous pouvons donner ça vers un $\texttt{curve\_fit}$ dans Python.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Fig/Python_Refroid.png}
+\caption{Exemple refroidissement. Il y a aussi un fichier pour chauffement.}
+\end{figure}
+
 \end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Approximation numérique avec Python}
+Résultats:
+\begin{enumerate}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 96.0399...$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, vide} \hfill $\tau = 86.1429...$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, sans vide} \hfill $\tau = 99.2634...$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, sans vide} \hfill $\tau = 84.5618...$\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 111.8591...$\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = 90.5110...$\hspace{4em} \newline}
+\end{enumerate}
+\end{frame}
+
+
 
 
 
@@ -179,10 +220,8 @@
 \frametitle{Resultats experimentaux - Interpretation}
 
 \begin{itemize}
-	\item{Fichiers .csv et Excel}
 	\item{Approximation graphique 1er ordre}
 	\item{Approximation graphique 2eme ordre}
-	\item{Approximation numérique 2eme ordre avec Python}
 
 \end{itemize}
 \end{frame}

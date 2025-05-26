@@ -7,3 +7,6 @@
 *.synctex.gz
 *.synctex(busy)
 *.toc
+Python/local_dir.py
+Python/__pycache__/
+*.rsls
