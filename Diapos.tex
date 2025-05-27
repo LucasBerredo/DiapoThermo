@@ -243,7 +243,7 @@ Expérience & 1er ordre & 2ème ordre & Python \\
 
 
 \begin{frame}
-\frametitle{Explication des résultats}
+\frametitle{Analyse des résultats}
 
 \end{frame}
 
@@ -329,16 +329,93 @@ Bien que nous ayons travaillé avec l'équipement et observé des résultats ave
 \begin{frame}
 \frametitle{Approximation des résultats}
 
-Comme rappel, nous n'avons pas fait cette expérience avec tous les points nécessaires. Donc, on fera un approche théoretique, puis une simulation avec l'aide de R, et finalement, nous traiterons ces données au lieu des expérimentales.
-	
+\begin{figure}
+\includegraphics[height=0.5in]{Fig/stefan-params.png}
+\caption{Paramètres à choisir}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=0.5in]{Fig/evol-temporelle.png}
+\caption{Fonction pour l'évolution temporelle théorique}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Approximation des résultats}
+
+\begin{figure}
+\includegraphics[width=0.75\textwidth]{Fig/bruit.png}
+\caption{Ajout du bruit}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Approximation des résultats}
+\centering
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{Fig/stefan-fichiers.png}
+    \textbf{Figure} -- Fichiers generés par le script
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \adjustbox{valign=c}{
+        \includegraphics[width=0.4\linewidth]{Fig/stefan-csv.png}}
+        
+        \textbf{Figure} -- Example des premières colonnes du .csv
+\end{minipage}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Analyse des données}
+Pour chaque fichier:
 \begin{itemize}
-	\item{Fixons la distance $d$}
-	\item{Avec le datasheet, trouvons la quantité qu'on attend comme paramètre}
-	\item{Simulation de la v.a. avec bruit normal}
-	\item{Analyse des données}
+	\item{On attend jusqu'à la courbe est presque stabilisé. (Après 30 secondes).}
+	\item{On prend la moyenne des résultats après $t=30$, afin de trouver un résultat plus proche au valeur théorique}
+	\item{En utilisant la formule $$\sigma = \frac{U}{\alpha\left(\frac{r}{r+d+d_0}\right)^2 (T^4-T_{ext}^4)},$$ on calcule la constante de Stefan}
 
 \end{itemize}
 \end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Analyse des données}
+\begin{table}[htdp]\begin{center}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|c|ccc|}
+\hline
+Dist\textbackslash Temp & 333,15 & 363,15 & 395,15 \\
+\hline
+0,3 & 1,491E-09 (2,63\%)& 1,546E-09 (2,72\%) & 5,364E-09 (9,45\%)\\
+0,4 & 4,668E-09 (8,23\%) & 9,580E-11 (0,17\%)& 1,443E-10 (0,25\%)\\
+0,6 & 2,277E-09 (4,01\%)& 2,754E-09 (4,85\%)& 1,676E-09 (2,95\%)\\
+0,8 & 1,078E-09 (1,90\%)& 1,065E-10 (0,19\%)& 1,200E-09 (2,12\%)\\
+1 & 4,995E-10 (0,88\%)& 2,061E-10 (0,36\%)& 4,690E-10 (0,83\%)\\
+\hline
+\end{tabular}
+}
+ \caption{Erreur absolue (erreur relative)}\end{center}\label{defaulttable}\end{table}
+
+\end{frame}
+
 
 
 \end{document}
