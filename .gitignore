@@ -10,3 +10,4 @@
 Python/local_dir.py
 Python/__pycache__/
 *.rsls
+*.csv
