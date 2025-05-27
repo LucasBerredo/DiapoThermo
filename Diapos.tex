@@ -96,20 +96,6 @@
 
 
 \begin{frame}
-\frametitle{Dispositif experimental}
-
-\begin{itemize}
-	\item{Corps gris}
-	\item{Corps noir}
-
-\end{itemize}
-\end{frame}
-
-
-
-
-
-\begin{frame}
 \frametitle{Dispositif expérimental}
 
 \begin{itemize}
@@ -169,17 +155,50 @@
 \begin{frame}
 \frametitle{Approximation graphique 1er ordre}
 
+Il ne faut que vérifier les valeur initiales, finales et approcher $\tau$ de façon qu'on trouve des courbes proches
+
+\begin{figure}
+\includegraphics[width=0.75\textwidth]{Fig/t1-100-t2-82.png}
+\caption{Example representation graphique: Vert: points experimentaux, Bleu: courbe théorique}
+\end{figure}
 
 \end{frame}
+
 
 
 
 
 \begin{frame}
-\frametitle{Approximation graphique 2eme ordre}
+\frametitle{Approximation graphique 1er ordre}
 
-
+Nous obtenons les prochains valeurs:
+\begin{enumerate}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, sans vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, sans vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = $\hspace{4em} \newline}
+\end{enumerate}
 \end{frame}
+
+
+
+
+
+\begin{enumerate}
+\frametitle{Approximation graphique 2ème ordre}
+\begin{enumerate}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, sans vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, sans vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = $\hspace{4em} \newline}
+\end{enumerate}
+
+\end{enumerate}
+
 
 
 
@@ -199,6 +218,25 @@ Comme nous avons la résolution pour $\tau$, nous pouvons donner ça vers un $\t
 
 
 
+
+\begin{frame}
+\frametitle{Comparaison des résultats}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Explication des résultats}
+
+\end{frame}
+
+
+
+
+
 \begin{frame}
 \frametitle{Approximation numérique avec Python}
 Résultats:
@@ -210,20 +248,6 @@ Résultats:
 	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 111.8591...$\hspace{4em} \newline}
 	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = 90.5110...$\hspace{4em} \newline}
 \end{enumerate}
-\end{frame}
-
-
-
-
-
-\begin{frame}
-\frametitle{Resultats experimentaux - Interpretation}
-
-\begin{itemize}
-	\item{Approximation graphique 1er ordre}
-	\item{Approximation graphique 2eme ordre}
-
-\end{itemize}
 \end{frame}
 
 

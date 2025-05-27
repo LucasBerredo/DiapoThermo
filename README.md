@@ -1,12 +1,19 @@
-Diapositives TP5 Thermodynamique
+# Diapositives TP5 – Thermodynamique
 
-Diapositives pour le TP5 de Thermodynamqiue @ L3 Physique UGA. 
+Diapositives pour le TP5 de Thermodynamique – Licence 3 Physique, Université Grenoble Alpes (UGA).
 
-Polycopie TP disponible dans https://github.com/LucasBerredo/TP_Thermo_EN
+Le polycopié du TP est disponible ici : [TP_Thermo_EN](https://github.com/LucasBerredo/TP_Thermo_EN)
 
-#### Prérequis
+## Prérequis LaTeX
 
-LaTeX avec Beamer et plusieurs paquets (disponibles dans la plupart des 
-installations)
+- LaTeX avec Beamer
+- Plusieurs packages LaTeX (disponibles dans la plupart des distributions complètes comme TeX Live ou MiKTeX)
+- Le thème Beamer [`focus-beamertheme`](https://github.com/pcafrica/focus-beamertheme) à installer manuellement
 
-Il faut installer https://github.com/pcafrica/focus-beamertheme
+
+## Prérequis Python
+
+- Remplissez `Python/local_dir_template.py` et renommez `Python\local_dir.py`
+- Packages: numpy, scipy, pandas.
+- Jupyter notebooks
+- SO: Verifié pour macOS. Peut fonctionner en Linux, Windows.
