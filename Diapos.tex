@@ -173,12 +173,12 @@ Il ne faut que vérifier les valeur initiales, finales et approcher $\tau$ de fa
 
 Nous obtenons les prochains valeurs:
 \begin{enumerate}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, sans vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, sans vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 100$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, vide} \hfill $\tau = 69$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, sans vide} \hfill $\tau = 117$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, sans vide} \hfill $\tau = 68$\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 105$\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = 99$\hspace{4em} \newline}
 \end{enumerate}
 \end{frame}
 
@@ -189,12 +189,12 @@ Nous obtenons les prochains valeurs:
 \begin{frame}
 \frametitle{Approximation graphique 2ème ordre}
 \begin{enumerate}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, sans vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, sans vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = $\hspace{4em} \newline}
-	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = $\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 82$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, vide} \hfill $\tau = 85$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, sans vide} \hfill $\tau = 100$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, sans vide} \hfill $\tau = 84$\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 111$\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = 89$\hspace{4em} \newline}
 \end{enumerate}
 
 \end{frame}
@@ -218,6 +218,22 @@ Comme nous avons la résolution pour $\tau$, nous pouvons donner ça vers un $\t
 
 
 
+\begin{frame}
+\frametitle{Approximation numérique avec Python}
+Résultats:
+\begin{enumerate}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 96,0399...$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, vide} \hfill $\tau = 86,1429...$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, sans vide} \hfill $\tau = 99,2634...$\hspace{4em} \newline}
+	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, sans vide} \hfill $\tau = 84,5618...$\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 111,8591...$\hspace{4em} \newline}
+	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = 90,5110...$\hspace{4em} \newline}
+\end{enumerate}
+\end{frame}
+
+
+
+
 
 \begin{frame}
 \frametitle{Comparaison des résultats}
@@ -226,12 +242,12 @@ Comme nous avons la résolution pour $\tau$, nous pouvons donner ça vers un $\t
 \hline
 Expérience & 1er ordre & 2ème ordre & Python \\
 \hline
-1 & 0 & 0 & 0 \\
-2 & 0 & 0 & 0 \\
-3 & 0 & 0 & 0 \\
-4 & 0 & 0 & 0 \\
-5 & 0 & 0 & 0 \\
-6 & 0 & 0 & 0\\
+1 & 100 & 82 & 96,0399 \\
+2 & 69 & 85 & 86,1429 \\
+3 & 117 & 100 & 99,2634 \\
+4 & 68 & 84 & 84,5618 \\
+5 & 105 & 111 & 111,8591 \\
+6 & 99 & 89 & 90,5110 \\
 \hline
 \end{tabular} 
 \caption{Valeurs du paramètre $\tau$}\end{center}\label{defaulttable}\end{table}
@@ -245,24 +261,14 @@ Expérience & 1er ordre & 2ème ordre & Python \\
 \begin{frame}
 \frametitle{Analyse des résultats}
 
+\begin{itemize}
+	\item{Les valeurs generés par Python suivent avec le moindre erreur possible la courbe.\newline}
+	\item{L'approximation à premier ordre a un erreur autour 20\% pour chaque expérience.\newline}
+	\item{L'approximation à deuxième ordre est beaucoup plus proche (autour $\pm1$ point).\newline}
+\end{itemize}
+
 \end{frame}
 
-
-
-
-
-\begin{frame}
-\frametitle{Approximation numérique avec Python}
-Résultats:
-\begin{enumerate}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 96.0399...$\hspace{4em} \newline}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, vide} \hfill $\tau = 86.1429...$\hspace{4em} \newline}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, sans vide} \hfill $\tau = 99.2634...$\hspace{4em} \newline}
-	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{blue5}refroidissement}, sans vide} \hfill $\tau = 84.5618...$\hspace{4em} \newline}
-	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = 111.8591...$\hspace{4em} \newline}
-	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = 90.5110...$\hspace{4em} \newline}
-\end{enumerate}
-\end{frame}
 
 
 
@@ -284,7 +290,7 @@ Résultats:
 
 \begin{frame}
 \frametitle{Avertissement}
-Bien que nous ayons travaillé avec l'équipement et observé des résultats avec {\color{red} Mme Nom}, nous n'avons pas enregistré de résultats numériques.
+Bien que nous ayons travaillé avec l'équipement et observé des résultats avec Mme Quilliet, nous n'avons pas enregistré de résultats numériques.
 \end{frame}
 
 
