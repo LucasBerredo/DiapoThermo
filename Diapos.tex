@@ -186,7 +186,7 @@ Nous obtenons les prochains valeurs:
 
 
 
-\begin{enumerate}
+\begin{frame}
 \frametitle{Approximation graphique 2ème ordre}
 \begin{enumerate}
 	\item{{\color{gray7}Corps gris}{\color{gray4}, {\color{red}chauffage}, vide} \hfill $\tau = $\hspace{4em} \newline}
@@ -197,7 +197,7 @@ Nous obtenons les prochains valeurs:
 	\item{{\color{black}Corps noir}{\color{gray4}, {\color{red}chauffage}, sans vide}\hfill $\tau = $\hspace{4em} \newline}
 \end{enumerate}
 
-\end{enumerate}
+\end{frame}
 
 
 
@@ -221,6 +221,20 @@ Comme nous avons la résolution pour $\tau$, nous pouvons donner ça vers un $\t
 
 \begin{frame}
 \frametitle{Comparaison des résultats}
+
+\begin{table}[htdp]\begin{center}\begin{tabular}{|c|c|c|c|}
+\hline
+Expérience & 1er ordre & 2ème ordre & Python \\
+\hline
+1 & 0 & 0 & 0 \\
+2 & 0 & 0 & 0 \\
+3 & 0 & 0 & 0 \\
+4 & 0 & 0 & 0 \\
+5 & 0 & 0 & 0 \\
+6 & 0 & 0 & 0\\
+\hline
+\end{tabular} 
+\caption{Valeurs du paramètre $\tau$}\end{center}\label{defaulttable}\end{table}
 
 \end{frame}
 
@@ -295,7 +309,14 @@ Bien que nous ayons travaillé avec l'équipement et observé des résultats ave
 \frametitle{Dispositif experimental}
 
 \begin{itemize}
-	\item{Explication dispositif}
+	\item{Deux parties:\newline
+	\begin{itemize}
+		\item{Côté emmisive - Boule à cuivre ``corps noir''\newline}
+		\item{Côté receptive - Thermopile CA2 (filtre en option) et multimètre\newlines}
+	\end{itemize}}
+	\item{Emmisivité fixé - mesure du puissance avec le multimètre\newline}
+	\item{Il faut attendre après chaque changement vers la stabilisation\newline}
+	\item{Mesures a plusieurs distances (0,3; 0,4; 0,8; 1,2m) et temperatures (20, 60, 90, 120 $^\circ C$)}
 	
 \end{itemize}	
 	
@@ -308,11 +329,14 @@ Bien que nous ayons travaillé avec l'équipement et observé des résultats ave
 \begin{frame}
 \frametitle{Approximation des résultats}
 
-\begin{itemize}
-	\item{Rappel: on n'a pas les résultats, mais on peut approximer}
-	\item{Simulation des données}
-	\item{Explication du valeur}
+Comme rappel, nous n'avons pas fait cette expérience avec tous les points nécessaires. Donc, on fera un approche théoretique, puis une simulation avec l'aide de R, et finalement, nous traiterons ces données au lieu des expérimentales.
 	
+\begin{itemize}
+	\item{Fixons la distance $d$}
+	\item{Avec le datasheet, trouvons la quantité qu'on attend comme paramètre}
+	\item{Simulation de la v.a. avec bruit normal}
+	\item{Analyse des données}
+
 \end{itemize}
 \end{frame}
 

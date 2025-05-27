@@ -13,7 +13,7 @@ Le polycopié du TP est disponible ici : [TP_Thermo_EN](https://github.com/Lucas
 
 ## Prérequis Python
 
-- Remplissez `Python/local_dir_template.py` et renommez `Python\local_dir.py`
+- Remplissez `Python/Rayonnement/local_dir_template.py` et renommez `Python/Rayonnement/local_dir.py`
 - Packages: numpy, scipy, pandas.
 - Jupyter notebooks
 - SO: Verifié pour macOS. Peut fonctionner en Linux, Windows.
