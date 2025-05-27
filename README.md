@@ -17,3 +17,8 @@ Le polycopié du TP est disponible ici : [TP_Thermo_EN](https://github.com/Lucas
 - Packages: numpy, scipy, pandas.
 - Jupyter notebooks
 - SO: Verifié pour macOS. Peut fonctionner en Linux, Windows.
+
+
+## Prérequis R
+
+- Instalation R avec Jupyter Notebooks. Lire [les instructions](https://cran.r-project.org/web/packages/IRkernel/readme/README.html)
