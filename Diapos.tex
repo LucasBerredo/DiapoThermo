@@ -32,7 +32,7 @@
   numbers=none,
   numberstyle=\tiny\color{gray},
   keywordstyle=\color{blue},
-  commentstyle=\color{darkgreen},
+  commentstyle=\color{darkgreen}, 
   stringstyle=\color{mauve},
   breaklines=true,
   breakatwhitespace=true,
@@ -65,11 +65,35 @@
 
 
 \begin{frame}
-\frametitle{Rappel théorique}
+\frametitle{But de l'experience}
 
 \begin{itemize}
-	\item{Corps noir / corps gris}
-	\item{Radiation dans le vide}
+	\item{L'emissivité}
+    
+
+    Nous allons determiner l'emmissivité d'un corps noir et gris.
+
+    Pour cela nous avons:
+    \[
+    \epsilon = \frac{C}{\tau S_1 \sigma 4 T_f^3}
+    \]
+
+    \item{Échange de chaleur}
+
+    
+    Nous allons déterminer l'échange de chaleur de nos deux corps
+    
+    $h$ représente l'ensemble des échanges de chaleur (conduction,rayonement,convection)
+    \[
+    h= \frac{C}{\tau' S_1}-\frac{\sigma 4 T_f^3}{\frac{1}{\epsilon}+\frac{1}{\epsilon_{air}}-1}
+    \]
+    
+
+    
+    
+
+
+    
 
 \end{itemize}
 
@@ -80,18 +104,58 @@
 
 
 \begin{frame}
-\frametitle{Explication théorique}
+\frametitle{Explication de l'experience}
 
 \begin{itemize}
-	\item{Analogue électrocinétique}
-	\item{Résolution exacte}
-	\item{Résolution approchée}
+La variation de Temperature obéit à l'équation diférencielle:
+
+\[
+C \frac{dT}{dt}=\epsilon S \sigma (T_f^4 - T(t)^4)
+\]
+
+    \item{Résolution exacte}
+    
+\[
+
+\scalebox{0.62}{
+$\displaystyle
+t = 2\tau \left[
+\left( \arctan\left( \exp\left( 2 \tanh^{-1} \frac{T(t)}{T_f} \right) \right)
+- \arctan\left( \exp\left( 2 \tanh^{-1} \frac{T_i}{T_f} \right) \right) \right)
++ \left( \tanh^{-1} \frac{T(t)}{T_f} - \tanh^{-1} \frac{T_i}{T_f} \right)
+\right]
+$}
+
+\]
+
+
+    \item{Résolution approchée
+    
+\[T= T_f + (T_i - T_f) (1-exp(\frac{-t}{\tau})\] }
 	
 \end{itemize}
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Explication de l'experience}
 
+\begin{itemize}
+
+	\item{Mise sous vide}
+    
+    Évite les échange de chaleur $h=0$
+    
+	\item{Pression ambiante}
+    
+    Permet de déterminer l'échange de chaleur
+
+
+
+	
+\end{itemize}
+
+\end{frame}
 
 
 
@@ -169,7 +233,7 @@ Il ne faut que vérifier les valeur initiales, finales et approcher $\tau$ de fa
 
 
 \begin{frame}
-\frametitle{Approximation graphique 1er ordre}
+\frametitle{Approximation graphique}
 
 Nous obtenons les prochains valeurs:
 \begin{enumerate}
@@ -238,7 +302,7 @@ Résultats:
 \begin{frame}
 \frametitle{Comparaison des résultats}
 
-\begin{table}[htdp]\begin{center}\begin{tabular}{|c|c|c|c|}
+\begin{table}[htdp]\begin{center}\begin{tabular}{|c|c|c|c|}
 \hline
 Expérience & 1er ordre & 2ème ordre & Python \\
 \hline
@@ -250,7 +314,7 @@ Expérience & 1er ordre & 2ème ordre & Python \\
 6 & 99 & 89 & 90,5110 \\
 \hline
 \end{tabular} 
-\caption{Valeurs du paramètre $\tau$}\end{center}\label{defaulttable}\end{table}
+\caption{Valeurs du paramètre $\tau$}\end{center}\label{defaulttable}\end{table}
 
 \end{frame}
 
@@ -270,6 +334,18 @@ Expérience & 1er ordre & 2ème ordre & Python \\
 \end{frame}
 
 
+\begin{frame}
+\frametitle{Analyse des résultats}
+On trouve les résultats suivant
+\begin{itemize}
+	\item{$\epsilon_{gris}=0,54 $\newline}
+
+	\item{$h_{gris}=11,27 W.m.K^{-1} $\newline}
+    \item{$\epsilon_{noir}=0,76 $\newline}
+    \item{$h_{noir}=15,13 W.m.K^{-1} $\newline}
+\end{itemize}
+
+\end{frame}
 
 
 
@@ -301,11 +377,25 @@ Bien que nous ayons travaillé avec l'équipement et observé des résultats ave
 \frametitle{Rappel théorique}
 
 \begin{itemize}
-	\item{Deduction Loi Stefan}
+	\item{ Loi de Stefan}
+
+    \[
+    M= \sigma T^4
+    \]
+
+    Avec M la densité de puissance ($W.m^{-2})$
 
 \end{itemize}
 
+
+
+\begin{figure}
+\includegraphics[height=1in]{Fig/shemas.png}
+\caption{Shémas de l'experience}
+\end{figure}
+
 \end{frame}
+
 
 
 
@@ -380,8 +470,6 @@ Bien que nous ayons travaillé avec l'équipement et observé des résultats ave
         \includegraphics[width=0.4\linewidth]{Fig/stefan-csv.png}}
         
         \textbf{Figure} -- Example des premières colonnes du .csv
-\end{minipage}
-\end{frame}
 
 
 
@@ -404,7 +492,7 @@ Pour chaque fichier:
 
 \begin{frame}
 \frametitle{Analyse des données}
-\begin{table}[htdp]\begin{center}
+\begin{table}[htdp]\begin{center}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{|c|ccc|}
 \hline
@@ -418,7 +506,7 @@ Dist\textbackslash Temp & 333,15 & 363,15 & 395,15 \\
 \hline
 \end{tabular}
 }
- \caption{Erreur absolue (erreur relative)}\end{center}\label{defaulttable}\end{table}
+ \caption{Erreur absolue (erreur relative)}\end{center}\label{defaulttable}\end{table}
 
 \end{frame}
 
