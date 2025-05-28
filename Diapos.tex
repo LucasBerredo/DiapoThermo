@@ -51,12 +51,14 @@
 
 
 \begin{frame}
-
+\vfill
 \Huge{TP5 Thermodynamique}
 
 \Large{Partie 1: Rayonnement}
 \\[2em]
 \large{BERREDO DE LA COLINA Lucas\\ MARTIN Lola}
+\\[2em]
+{\small Fichiers: \url{https://github.com/LucasBerredo/DiapoThermo}}
 
 \end{frame}
 
@@ -87,13 +89,6 @@
     \[
     h= \frac{C}{\tau' S_1}-\frac{\sigma 4 T_f^3}{\frac{1}{\epsilon}+\frac{1}{\epsilon_{air}}-1}
     \]
-    
-
-    
-    
-
-
-    
 
 \end{itemize}
 
@@ -104,55 +99,48 @@
 
 
 \begin{frame}
-\frametitle{Explication de l'experience}
+\frametitle{Explication de l'expérience}
 
 \begin{itemize}
-La variation de Temperature obéit à l'équation diférencielle:
+    \item La variation de température obéit à l'équation différentielle :
 
-\[
-C \frac{dT}{dt}=\epsilon S \sigma (T_f^4 - T(t)^4)
-\]
+    \[
+    C \frac{dT}{dt} = \epsilon S \sigma \left( T_f^4 - T(t)^4 \right)
+    \]
 
-    \item{Résolution exacte}
-    
-\[
+    \item Résolution exacte :
 
-\scalebox{0.62}{
-$\displaystyle
-t = 2\tau \left[
-\left( \arctan\left( \exp\left( 2 \tanh^{-1} \frac{T(t)}{T_f} \right) \right)
-- \arctan\left( \exp\left( 2 \tanh^{-1} \frac{T_i}{T_f} \right) \right) \right)
-+ \left( \tanh^{-1} \frac{T(t)}{T_f} - \tanh^{-1} \frac{T_i}{T_f} \right)
-\right]
-$}
+    \[
+    \scalebox{0.62}{
+    $\displaystyle
+    t = 2\tau \left[
+    \left( \arctan\left( \exp\left( 2 \tanh^{-1} \frac{T(t)}{T_f} \right) \right)
+    - \arctan\left( \exp\left( 2 \tanh^{-1} \frac{T_i}{T_f} \right) \right) \right)
+    + \left( \tanh^{-1} \frac{T(t)}{T_f} - \tanh^{-1} \frac{T_i}{T_f} \right)
+    \right]
+    $}
+    \]
 
-\]
+    \item Résolution approchée :
 
+    \[
+    T = T_f + (T_i - T_f) \left( 1 - \exp\left( \frac{-t}{\tau} \right) \right)
+    \]
 
-    \item{Résolution approchée
-    
-\[T= T_f + (T_i - T_f) (1-exp(\frac{-t}{\tau})\] }
-	
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}
-\frametitle{Explication de l'experience}
+\frametitle{Explication de l'expérience}
 
 \begin{itemize}
+    \item Mise sous vide :
 
-	\item{Mise sous vide}
-    
-    Évite les échange de chaleur $h=0$
-    
-	\item{Pression ambiante}
-    
-    Permet de déterminer l'échange de chaleur
+    Évite les échanges de chaleur ($h = 0$)
 
+    \item Pression ambiante :
 
-
-	
+    Permet de mesurer l’échange de chaleur
 \end{itemize}
 
 \end{frame}
@@ -351,12 +339,14 @@ On trouve les résultats suivant
 
 
 \begin{frame}
-
+\vfill
 \Huge{TP5 Thermodynamique}
 
 \Large{Partie 2: Loi de Stefan}
 \\[2em]
 \large{BERREDO DE LA COLINA Lucas\\ MARTIN Lola}
+\\[2em]
+{\small Fichiers: \url{https://github.com/LucasBerredo/DiapoThermo}}
 
 \end{frame}
 
@@ -470,8 +460,9 @@ Bien que nous ayons travaillé avec l'équipement et observé des résultats ave
         \includegraphics[width=0.4\linewidth]{Fig/stefan-csv.png}}
         
         \textbf{Figure} -- Example des premières colonnes du .csv
+\end{minipage}     
 
-
+\end{frame}
 
 
 
